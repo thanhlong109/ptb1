@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính phương trình bậc nhất</title>
+</head>
+<body>
+    <form>
+        <input id="num1" type="number" placeholder="Nhập a">
+        <input id="num2" type="number" placeholder="Nhập b"><br>
+        <button type="button" onclick="ptb1()">giải</button>
+
+    </form>
+    <script>
+        function ptb1()
+        {
+            let a = +document.getElementById("num1").value;
+            let b = +document.getElementById("num2").value;
+            let result;
+            if(a!==0)
+            {
+                document.write("x= "+(-b/a));
+            }
+            else if(b===0)
+            {
+                document.write("pt có vô số nghiệm");
+            }
+            else document.write("pt vô nghiệm");
+        }
+    </script>
+</body>
+</html>
